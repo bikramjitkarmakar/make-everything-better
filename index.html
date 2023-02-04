@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Serverless Image Processing App</title>
-  <meta name="description" content="A Serverless Streamlit application with OpenCV image processing that completely works on your browser">
+  <meta name="description" content="This application guarantees to make things better for you">
 </head>
 <body>
   <div id="root"></div>
@@ -88,13 +88,13 @@ canvas, face, smile = detect(gray, img)
 if face == 1 and smile == 1:
     st.balloons()
     st.image(canvas, channels="BGR")
-    st.success("Your smile made things better now")
+    st.success("Your smile makes things better")
     if st.button("Make things even better"):
         st.snow()
 
 elif face == 1 and smile == 0:
     st.image(canvas, channels="BGR")
-    st.warning("We found your face, but it still has a frown try smiling harder")
+    st.warning("We found your face, but it still has a frown. Try smiling harder. Click 'Clear Photo' and try again")
 
 
 else:
